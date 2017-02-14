@@ -1,0 +1,6 @@
+c:\users\rodrigo\documents\visual studio 2013\Projects\Practices_TypeScript\Practices_TypeScript\bin\Practices_TypeScript.dll.config
+c:\users\rodrigo\documents\visual studio 2013\Projects\Practices_TypeScript\Practices_TypeScript\bin\Practices_TypeScript.dll
+c:\users\rodrigo\documents\visual studio 2013\Projects\Practices_TypeScript\Practices_TypeScript\bin\Practices_TypeScript.pdb
+c:\users\rodrigo\documents\visual studio 2013\Projects\Practices_TypeScript\Practices_TypeScript\obj\Debug\Practices_TypeScript.csprojResolveAssemblyReference.cache
+c:\users\rodrigo\documents\visual studio 2013\Projects\Practices_TypeScript\Practices_TypeScript\obj\Debug\Practices_TypeScript.dll
+c:\users\rodrigo\documents\visual studio 2013\Projects\Practices_TypeScript\Practices_TypeScript\obj\Debug\Practices_TypeScript.pdb
