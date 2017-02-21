@@ -69,4 +69,53 @@ const userData = { userName: "Rodry", age: 27 };
 const { userName, age } = userData;
 console.log(userName, age);
 
+// Exercise 1 - Maybe use an Arrow Function?
+var double = function (value) {
+    return value * 2;
+};
+console.log(double(10));
+//Resultado ejercicio 1
+const doubleArrowFunction = (value: number) => value * 2;
+console.log(doubleArrowFunction(10));
+
+// Exercise 2 - If only we could provide some default values...
+var greetExam = function (name) {
+    if (name === undefined) { name = "Max"; }
+    console.log("Hello, " + name);
+};
+greetExam("");
+greetExam("Anna");
+
+//Resultado ejercicio 2
+var greetExamModify = (name: string = "Rodry") => { 
+    console.log(`Hello, ${name}`);
+};
+greetExamModify();
+greetExamModify("Cochinilla");
+
+// Exercise 3 - Isn't there a shorter way to get all these Values?
+var numbersExams = [-3, 33, 38, 5];
+console.log(Math.min.apply(Math, numbers));
+
+//Resultado con operador Spread
+console.log(Math.min(...numbersExams));
+
+// Exercise 4 - I have to think about Exercise 3 ...
+var newArray = [55, 20];
+Array.prototype.push.apply(newArray, numbers);
+console.log(newArray);
+
+//Agregamos el arreglo al array nuevo
+newArray.push(...numbersExams);
+console.log(newArray);
+
+
+
+
+
+
+
+
+
+
 
