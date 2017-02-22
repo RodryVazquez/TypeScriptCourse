@@ -38,7 +38,7 @@ const greetFriend = friend => console.log(friend);
 console.log(greetFriend("Rodry"));
 
 //Parametros por default
-const countDown = (start: number = 20, end:number = start -1): void => {
+const countDown = (start: number = 20, end: number = start - 1): void => {
     console.log(start);
     console.log(end);
     while (start > 0) {
@@ -57,6 +57,7 @@ console.log(Math.max(...numbers));
 function makeArray(name: string, ...args: number[]) {
     return args;
 }
+
 console.log(makeArray("Rodry", 1, 2, 3));
 
 //Destructuring array
@@ -68,4 +69,42 @@ console.log(d1, d2);
 const userData = { userName: "Rodry", age: 27 };
 const { userName, age } = userData;
 console.log(userName, age);
+
+//Clases
+class Person {
+
+    public personName: string;
+    private typeProperty: string;
+    protected ageProperty: number = 28;
+
+    constructor(personName: string, public userNameProperty: string) {
+        this.personName = personName;
+    }
+
+    printAge() {
+        console.log(this.ageProperty);
+    }
+
+    setType(value: string) {
+        this.typeProperty = value;
+        console.log(this.typeProperty);
+    }
+}
+const person = new Person("Rodrigo", "Cochinilla");
+console.log(person);
+console.log(person.personName, person.userNameProperty);
+console.log(person.printAge());
+console.log(person.setType("Hello Rodry"));
+
+//Herencia
+class Rodry extends Person {
+    personName: "Rodry";
+}
+
+const rodry = new Rodry("value1", "value2");
+console.log(rodry);
+
+
+
+
 
