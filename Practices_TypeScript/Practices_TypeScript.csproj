@@ -59,6 +59,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\Helpers\Classes.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -82,6 +83,8 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Scripts\Helpers\Classes.js" />
+    <Content Include="Scripts\Helpers\Excercises_Module_5_Section_66\exercises2.js" />
     <Content Include="Scripts\Helpers\Exercises_Module_4_Section_52\exercises.js" />
     <Content Include="Scripts\Helpers\HelpersTs.js.map" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />

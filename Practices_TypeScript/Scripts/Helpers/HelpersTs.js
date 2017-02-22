@@ -1,11 +1,6 @@
 //Excercise: Problem Code
 //Section 2, Lecture 27
 //Try to be as explicit as possible and add Types to everything you can!
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
 var bankAccount = {
     money: 2000,
     deposit: function (value) {
@@ -64,35 +59,4 @@ console.log(d1, d2);
 var userData = { userName: "Rodry", age: 27 };
 var userName = userData.userName, age = userData.age;
 console.log(userName, age);
-//Clases
-var Person = (function () {
-    function Person(personName, userNameProperty) {
-        this.userNameProperty = userNameProperty;
-        this.ageProperty = 28;
-        this.personName = personName;
-    }
-    Person.prototype.printAge = function () {
-        console.log(this.ageProperty);
-    };
-    Person.prototype.setType = function (value) {
-        this.typeProperty = value;
-        console.log(this.typeProperty);
-    };
-    return Person;
-}());
-var person = new Person("Rodrigo", "Cochinilla");
-console.log(person);
-console.log(person.personName, person.userNameProperty);
-console.log(person.printAge());
-console.log(person.setType("Hello Rodry"));
-//Herencia
-var Rodry = (function (_super) {
-    __extends(Rodry, _super);
-    function Rodry() {
-        _super.apply(this, arguments);
-    }
-    return Rodry;
-}(Person));
-var rodry = new Rodry("value1", "value2");
-console.log(rodry);
 //# sourceMappingURL=HelpersTs.js.map
