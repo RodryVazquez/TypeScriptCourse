@@ -3,7 +3,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-//Ejercicio 1
+//Ejercicio 1 Clase
 var Car = (function () {
     function Car(name) {
         this.name = name;
@@ -20,7 +20,7 @@ var car = new Car("BMW");
 car.honk();
 car.accelerate(10);
 console.log(car.acceleration);
-//Ejercicio 2
+//Ejercicio 2 Herencia
 var BaseObject = (function () {
     function BaseObject() {
         this.width = 0;
@@ -40,4 +40,31 @@ var Rectangle = (function (_super) {
     };
     return Rectangle;
 }(BaseObject));
-//# sourceMappingURL=solution.js.map
+var rectangle = new Rectangle();
+console.log(rectangle.calcSize(5, 2));
+//Ejercicio 3 Getter & Setter
+var PersonClass = (function () {
+    function PersonClass() {
+        this._firstName = "";
+    }
+    Object.defineProperty(PersonClass.prototype, "firstName", {
+        get: function () { return this._firstName; },
+        set: function (value) {
+            if (value.length > 3) {
+                this._firstName = value;
+            }
+            else {
+                this._firstName = "";
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    return PersonClass;
+}());
+var personClass = new PersonClass();
+console.log(personClass.firstName);
+//Set
+personClass.firstName = "Rodry";
+//Get
+console.log(personClass.firstName);
