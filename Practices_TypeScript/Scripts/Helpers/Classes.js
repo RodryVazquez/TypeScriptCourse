@@ -1,8 +1,13 @@
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 //Declaramos la clase
 var Person = (function () {
     //Constructor de la clase 
@@ -35,8 +40,9 @@ var NewPerson = (function (_super) {
     //Sobreescribimos el valor de personName
     //personName: "Rodrigo Vazquez";
     function NewPerson(value) {
-        _super.call(this, "Rodrigo", value);
-        this.ageProperty = 28;
+        var _this = _super.call(this, "Rodrigo", value) || this;
+        _this.ageProperty = 28;
+        return _this;
     }
     return NewPerson;
 }(Person));
@@ -69,10 +75,10 @@ var Helpers = (function () {
     Helpers.calcCircunference = function (dimeter) {
         return this.PI * dimeter;
     };
-    //Declaramos las variables estaticas
-    Helpers.PI = 3.1416;
     return Helpers;
 }());
+//Declaramos las variables estaticas
+Helpers.PI = 3.1416;
 console.log(2 * Helpers.PI);
 console.log(Helpers.calcCircunference(12.88));
 //Clases abstractas
@@ -89,7 +95,7 @@ var Project = (function () {
 var ItProject = (function (_super) {
     __extends(ItProject, _super);
     function ItProject() {
-        _super.apply(this, arguments);
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     //Implementamos el metodo abstracto
     ItProject.prototype.changeNameProject = function (name) {
@@ -118,9 +124,9 @@ var OnlyOne = (function () {
     OnlyOne.prototype.getNumber = function () {
         return this.number;
     };
-    OnlyOne.instance = new OnlyOne();
     return OnlyOne;
 }());
+OnlyOne.instance = new OnlyOne();
 var wronInit = new OnlyOne(); //Error al iniciar
 var rigthInit = OnlyOne.getInstance();
 rigthInit.setDefaultNumber(10);

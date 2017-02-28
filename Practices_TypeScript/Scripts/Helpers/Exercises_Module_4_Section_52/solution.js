@@ -23,4 +23,3 @@ console.log([val1, val2, val3]);
 var userDataObject = { nameUser: "Rodrigo", lastName: "Vazquez" };
 var nombreUsuario = userDataObject.nameUser, apellidoUsuario = userDataObject.lastName;
 console.log(nombreUsuario, apellidoUsuario);
-//# sourceMappingURL=solution.js.map
