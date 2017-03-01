@@ -4,9 +4,7 @@ class Map<T> {
 
     //dataSource: T[];
     private dataSource: {[key:string]: T} = {};
-    //constructor() {
-    //    this.dataSource = [];
-    //}
+    
     setItem(key: string, item: T): void {
         this.dataSource[key] = item;
     }

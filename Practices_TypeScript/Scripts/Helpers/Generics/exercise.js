@@ -4,9 +4,6 @@ var Map = (function () {
         //dataSource: T[];
         this.dataSource = {};
     }
-    //constructor() {
-    //    this.dataSource = [];
-    //}
     Map.prototype.setItem = function (key, item) {
         this.dataSource[key] = item;
     };
