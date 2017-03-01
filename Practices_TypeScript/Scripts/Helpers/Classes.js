@@ -131,3 +131,4 @@ var wronInit = new OnlyOne(); //Error al iniciar
 var rigthInit = OnlyOne.getInstance();
 rigthInit.setDefaultNumber(10);
 console.log(rigthInit.getNumber());
+//# sourceMappingURL=Classes.js.map

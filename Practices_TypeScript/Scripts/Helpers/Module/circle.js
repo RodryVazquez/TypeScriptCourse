@@ -5,3 +5,4 @@ function calculateDimeter(radio) {
     return exports.Pi * radio;
 }
 exports.calculateDimeter = calculateDimeter;
+//# sourceMappingURL=circle.js.map

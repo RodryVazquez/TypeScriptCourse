@@ -33,7 +33,15 @@ myPerson.worker = "Developer";
 setPersonInfo(myPerson);
 myPerson.setPersonInfo(myPerson.worker);
 var myDoubleFunction;
-myDoubleFunction = function (value1, value2) {
-    return (value1 + value2) * 2;
-};
+myDoubleFunction = function (value1, value2) { return (value1 + value2) * 2; };
 console.log(myDoubleFunction(1, 2));
+var oldPerson = {
+    //Ahora la edad es requerida
+    age: 27,
+    firstName: "Rodry Again",
+    setPersonInfo: function (lastName) {
+        console.log("Hello!!");
+    }
+};
+console.log(oldPerson);
+//# sourceMappingURL=doc.js.map

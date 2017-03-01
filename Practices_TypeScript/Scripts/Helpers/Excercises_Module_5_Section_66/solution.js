@@ -73,3 +73,4 @@ console.log(personClass.firstName);
 personClass.firstName = "Rodry";
 //Get
 console.log(personClass.firstName);
+//# sourceMappingURL=solution.js.map

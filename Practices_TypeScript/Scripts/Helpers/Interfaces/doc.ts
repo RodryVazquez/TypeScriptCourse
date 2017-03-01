@@ -1,5 +1,5 @@
 ﻿//Interfaces
-interface NamedPerson {
+interface INamedPerson {
     firstName: string;
     //Parametro opcional
     age?: number;
@@ -9,12 +9,12 @@ interface NamedPerson {
     setPersonInfo(lastName: string): void;
 }
 
-function setPersonInfo(person: NamedPerson) {
+function setPersonInfo(person: INamedPerson) {
     console.log("Iam " + person.firstName);
     console.log("and this are my languages " + person.languages);
 }
 
-function changeName(person: NamedPerson) {
+function changeName(person: INamedPerson) {
     person.firstName = "Cochinilla";
 }
 
@@ -33,7 +33,7 @@ setPersonInfo(object);
 object.setPersonInfo("Vazquez");
 
 //Tambien podemos utilizar clases
-class PersonC implements NamedPerson {
+class PersonC implements INamedPerson {
     //Sobreescribimos al menos las variables necesarias de la interface
     firstName: string;
     //Variable adicional
@@ -52,19 +52,29 @@ setPersonInfo(myPerson);
 myPerson.setPersonInfo(myPerson.worker);
 
 //Function Types
-
-interface DoubleValueCal {
+interface IDoubleValueCal {
     (number1: number, number2: number): number;
 }
 
-let myDoubleFunction: DoubleValueCal;
-
-myDoubleFunction = function (value1: number, value2: number) {
-    return (value1 + value2) * 2;
-}
-
+let myDoubleFunction: IDoubleValueCal;
+myDoubleFunction = (value1: number, value2: number) => (value1 + value2) * 2;
 console.log(myDoubleFunction(1, 2));
 
+//Herencia en interface
+interface IOldPerson extends INamedPerson {
+    age:number;
+}
+
+const oldPerson: IOldPerson = {
+    //Ahora la edad es requerida
+    age: 27,
+    firstName: "Rodry Again",
+    setPersonInfo(lastName: string)
+    {
+        console.log("Hello!!");
+    }
+};
+console.log(oldPerson);
 
 
  

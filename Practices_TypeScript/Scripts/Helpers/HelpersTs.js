@@ -59,3 +59,4 @@ console.log(d1, d2);
 var userData = { userName: "Rodry", age: 27 };
 var userName = userData.userName, age = userData.age;
 console.log(userName, age);
+//# sourceMappingURL=HelpersTs.js.map

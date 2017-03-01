@@ -97,9 +97,12 @@
     <Content Include="Scripts\Helpers\Classes.js.map" />
     <Content Include="Scripts\Helpers\Excercises_Module_5_Section_66\solution.js.map" />
     <Content Include="Scripts\Helpers\Exercises_Module_4_Section_52\solution.js.map" />
+    <Content Include="Scripts\Helpers\Generics\app.js" />
+    <Content Include="Scripts\Helpers\Generics\exercise.js" />
     <Content Include="Scripts\Helpers\Interfaces\doc.js.map" />
     <Content Include="Scripts\Helpers\Module\circle.js.map" />
     <Content Include="Scripts\Helpers\Module\rectangle.js.map" />
+    <Content Include="Scripts\Helpers\Generics\app.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -150,6 +153,8 @@
     <TypeScriptCompile Include="Scripts\Helpers\Classes.ts" />
     <TypeScriptCompile Include="Scripts\Helpers\Excercises_Module_5_Section_66\solution.ts" />
     <TypeScriptCompile Include="Scripts\Helpers\Exercises_Module_4_Section_52\solution.ts" />
+    <TypeScriptCompile Include="Scripts\Helpers\Generics\app.ts" />
+    <TypeScriptCompile Include="Scripts\Helpers\Generics\exercise.ts" />
     <TypeScriptCompile Include="Scripts\Helpers\HelpersTs.ts" />
     <TypeScriptCompile Include="Scripts\Helpers\Interfaces\doc.ts" />
     <TypeScriptCompile Include="Scripts\Helpers\Module\circle.ts" />
