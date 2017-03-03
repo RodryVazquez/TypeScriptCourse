@@ -20,8 +20,9 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
     <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -92,9 +93,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\Helpers\Classes.js" />
     <Content Include="Scripts\Helpers\Classes.js.map" />
     <Content Include="Scripts\Helpers\Excercises_Module_5_Section_66\solution.js.map" />
     <Content Include="Scripts\Helpers\Exercises_Module_4_Section_52\solution.js.map" />
+    <Content Include="Scripts\Helpers\Generics\app.js" />
+    <Content Include="Scripts\Helpers\Generics\exercise.js" />
+    <Content Include="Scripts\Helpers\Interfaces\doc.js.map" />
+    <Content Include="Scripts\Helpers\Module\circle.js.map" />
+    <Content Include="Scripts\Helpers\Module\rectangle.js.map" />
+    <Content Include="Scripts\Helpers\Generics\app.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -118,7 +126,6 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Scripts\Helpers\Classes.js" />
     <Content Include="Scripts\Helpers\Excercises_Module_5_Section_66\exercises2.js" />
     <Content Include="Scripts\Helpers\Excercises_Module_5_Section_66\solution.js" />
     <Content Include="Scripts\Helpers\Exercises_Module_4_Section_52\exercises.js" />
@@ -128,7 +135,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Helpers\HelpersTs.js" />
-    <Content Include="Scripts\Helpers\Module\app.js" />
+    <Content Include="Scripts\Helpers\Interfaces\doc.js" />
     <Content Include="Scripts\Helpers\Module\circle.js" />
     <Content Include="Scripts\Helpers\Module\rectangle.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -146,13 +153,16 @@
     <TypeScriptCompile Include="Scripts\Helpers\Classes.ts" />
     <TypeScriptCompile Include="Scripts\Helpers\Excercises_Module_5_Section_66\solution.ts" />
     <TypeScriptCompile Include="Scripts\Helpers\Exercises_Module_4_Section_52\solution.ts" />
+    <TypeScriptCompile Include="Scripts\Helpers\Generics\app.ts" />
+    <TypeScriptCompile Include="Scripts\Helpers\Generics\exercise.ts" />
     <TypeScriptCompile Include="Scripts\Helpers\HelpersTs.ts" />
-    <TypeScriptCompile Include="Scripts\Helpers\Module\app.ts" />
+    <TypeScriptCompile Include="Scripts\Helpers\Interfaces\doc.ts" />
     <TypeScriptCompile Include="Scripts\Helpers\Module\circle.ts" />
     <TypeScriptCompile Include="Scripts\Helpers\Module\rectangle.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\kendo-ui\kendo-ui.d.ts" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -2,6 +2,4 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/Practices_TypeScript/bin
-/.vs
-/Practices_TypeScript/obj/Debug
+/.vs/Practices_TypeScript/v14
